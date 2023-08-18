@@ -54,6 +54,7 @@
 }
 
 .container2 div {
+    margin-top: 30px;
     margin-left: 75px;
     width: 75%;
     height: 100%;
@@ -62,7 +63,7 @@
 .container2 img {
     position: absolute;
     bottom: 0;
-right: 0;
+    right: 0;
     width: 25%;
     height: 25%;
 }
@@ -76,13 +77,13 @@ right: 0;
     bottom: 0px;
 }
 
-.back1{
+.back1 {
     position: absolute;
     transform: rotate(72deg);
     left: -3%;
     top: 9%;
 }
 
-.back1 img{
+.back1 img {
     width: 63%;
 }
