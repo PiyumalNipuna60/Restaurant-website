@@ -68,6 +68,10 @@
     height: 25%;
 }
 
+.container2 h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 .container2 div p {
     margin-top: 20px;
 }

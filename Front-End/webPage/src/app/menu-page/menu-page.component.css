@@ -1,0 +1,73 @@
+.logo {
+    width: 8%;
+    position: relative;
+    left: 12%;
+    top: 15px;
+}
+
+.logoName {
+    margin-left: 8%;
+}
+
+.head {
+    display: flex;
+    margin-left: 10%;
+}
+
+.head h1 {
+    font-size: xxx-large;
+    margin-left: 10%;
+    min-width: fit-content;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.head div {
+    position: relative;
+    width: 50%;
+    right: 0;
+    margin: auto;
+}
+
+.content {
+    margin-top: 3%;
+    height: 15rem;
+    margin-bottom: 8%;
+}
+
+.content>div {
+    display: flex;
+}
+
+.content div h1 {
+    min-width: fit-content;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.content div p {
+    width: 80%;
+}
+
+.content>div>div {
+    width: 50%;
+    position: relative;
+    left: 30%;
+    margin-top: 3%;
+}
+
+.content>div>img {
+    margin-left: 15%;
+    margin-top: 2%;
+}
+
+.content2>div>img {
+    position: absolute;
+    right: 30%;
+    margin-top: 3%;
+}
+
+.content2>div>div {
+    width: 50%;
+    position: relative;
+    left: 12%;
+    margin-top: 3%;
+}
