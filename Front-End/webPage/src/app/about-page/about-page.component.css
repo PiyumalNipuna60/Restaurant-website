@@ -1,0 +1,88 @@
+.section {
+    position: relative;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    height: 50vh;
+    width: 75vw;
+    display: flex;
+    border: 2px solid white;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid gray;
+    border-right: 3px solid gray;
+    right: -20px;
+    bottom: -20px;
+    border-radius: 10px;
+}
+
+.container1 {
+    width: 40%;
+    position: absolute;
+    left: 0;
+    height: 100%;
+}
+
+.container1>div {
+    width: 100%;
+    height: 100%;
+}
+
+.container1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.container2 {
+    width: 60%;
+    position: absolute;
+    right: 0;
+    height: 100%;
+}
+
+.container2 div {
+    margin-left: 75px;
+    width: 75%;
+    height: 100%;
+}
+
+.container2 img {
+    position: absolute;
+    bottom: 0;
+right: 0;
+    width: 25%;
+    height: 25%;
+}
+
+.container2 div p {
+    margin-top: 20px;
+}
+
+.title {
+    position: absolute;
+    bottom: 0px;
+}
+
+.back1{
+    position: absolute;
+    transform: rotate(72deg);
+    left: -3%;
+    top: 9%;
+}
+
+.back1 img{
+    width: 63%;
+}

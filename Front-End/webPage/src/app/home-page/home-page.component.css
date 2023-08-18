@@ -16,3 +16,10 @@
 .left p{
   font-size: 4rem;
 }
+
+.hand{
+    transform: rotate(45deg); 
+    position: absolute;
+    top: 210px;
+    left: -240px;
+}
