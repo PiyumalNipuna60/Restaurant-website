@@ -11,7 +11,7 @@
 
 .head {
     display: flex;
-    margin-left: 10%;
+    margin-left: 0%;
 }
 
 .head h1 {
@@ -50,24 +50,34 @@
 .content>div>div {
     width: 50%;
     position: relative;
-    left: 30%;
-    margin-top: 3%;
+    left: 15%;
+    margin-top: 8%;
 }
 
-.content>div>img {
+.content>div img {
     margin-left: 15%;
     margin-top: 2%;
+    width: 25%;
+    position: relative;
+    left: 0%;
+}
+
+.content2 {
+    height: 15rem;
+    margin-bottom: 8%;
+    padding-top: 1%;
 }
 
 .content2>div>img {
     position: absolute;
-    right: 30%;
-    margin-top: 3%;
+    right: 15%;
+    width: 22%;
+    margin-top: -6%;
 }
 
 .content2>div>div {
     width: 50%;
     position: relative;
     left: 12%;
-    margin-top: 3%;
+    margin-top: 8%;
 }
