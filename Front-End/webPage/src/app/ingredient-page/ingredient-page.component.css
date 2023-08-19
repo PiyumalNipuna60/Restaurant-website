@@ -1,0 +1,60 @@
+.main {
+    margin-top: 15% !important;
+    justify-content: center;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 70%;
+    height: 100vh;
+    border: 2px solid gray;
+}
+
+
+.main-content {
+    padding-top: 2%;
+    width: 80%;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+.main-content p {
+    padding-top: 1%;
+    width: 60%;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+h4 {
+    font-family: 'Snell Roundhand', 'cursive', 'Segoe Script';
+    font-style: oblique
+}
+
+
+.page-header {
+    min-width: fit-content;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.second-content {
+    height: 65%;
+    margin-top: -13%;
+    width: 90%;
+    padding-left: 2%;
+}
+
+.second-content img {
+    transform: rotate(95deg);
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 48%;
+    height: 109%;
+}
