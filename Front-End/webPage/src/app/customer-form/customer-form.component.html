@@ -1,1 +1,104 @@
-<p>customer-form works!</p>
+<!-- introducing customer form -->
+<section class="container-fluid " id="customerForm">
+
+    <section class="row mt-0  justify-content-around" style="margin-right: 0; margin-left: 0">
+        <div class="col-12 col-md-5 mt-5">
+            <div class="pt-3 pb-5 px-3 py-3 mt-2 mainLoader">
+
+                <!-- manage customer label setup -->
+                <h1 class="h1 mb-3" style="font-family: 'Kanit', sans-serif;color: #2a6407; font-weight: bold ">Manage
+                    Customer</h1>
+                <div class="mb-3">
+
+                    <!-- search text label -->
+                    <label class="form-label" for="srcCustomerId" style="color: #3fd518; font-weight: bold">Search
+                        Customer</label>
+
+                    <!-- text field set up -->
+                    <input class="searchFld form-control " id="srcCustomerId" placeholder="Customer ID" type="text">
+
+                </div>
+                <!-- adding buttons for customer managements -->
+
+                <!-- add button -->
+                <button class="btn btnBackGround m-lg-2" id="addCustomerBtn"
+                        style="background-color: #2ed573; color: black;font-weight: bold;"
+                        type="button">Add Customer
+                </button>
+                <!-- update button -->
+                <button class="btn btnBackGround m-lg-2" id="updateCustomerBtn"
+                        style="background-color: #eccc68; color: black;font-weight: bold;"
+                        type="button">Update Customer
+                </button>
+                <!-- delete button -->
+                <button class="btn btnBackGround m-lg-2" id="deleteCustomerBtn"
+                        style="background-color: #ff4757; color: black;font-weight: bold;"
+                        type="button">Delete Customer
+                </button>
+
+            </div>
+        </div>
+
+        <!-- customer details form -->
+        <div class="col-12 col-md-5 mt-3 textFldPanes">
+
+            <!-- customer ID set up -->
+            <div class="mb-3">
+                <label class="form-label" for="cusIdTxt" style="font-weight: bolder">Customer ID</label>
+                <input class="searchFld form-control " disabled id="cusIdTxt" placeholder="Customer ID" type="text">
+                <p><small class="text-danger fw-bold" id="customerIdLbl"></small></p>
+            </div>
+
+            <!-- customer Name set up -->
+            <div class="mb-3">
+                <label class="form-label" for="cusNameTxt" style="font-weight: bolder">Customer Name</label>
+                <input class="form-control" id="cusNameTxt" placeholder="Customer Name" type="text">
+                <p><small class="text-danger fw-bold" id="customerNameLbl"></small></p>
+            </div>
+
+            <!-- customer Address set up -->
+            <div class="mb-3">
+                <label class="form-label" for="cusAddressTxt" style="font-weight: bolder">Customer Address</label>
+                <input class="form-control" id="cusAddressTxt" placeholder="Customer Address" type="text">
+                <p><small class="text-danger fw-bold" id="customerAddressLbl"></small></p>
+            </div>
+
+            <!-- customer Salary set up -->
+            <div class="mb-3">
+                <label class="form-label" for="cusContactTxt" style="font-weight: bolder">Contact</label>
+                <input class="form-control" id="cusContactTxt" placeholder="Customer Tp" type="text">
+                <p><small class="text-danger fw-bold" id="CustomerContactLbl"></small></p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- table management starts -->
+    <section class="row justify-content-center w-100 mt-3">
+        <div class="col" style="padding-left: 2rem">
+            <!-- table container set up -->
+            <table class="table table-hover container-fluid classTbl">
+
+                <!-- table heading -->
+                <thead class="bg-dark text-white tableHead">
+
+                <tr>
+                    <th>Customer ID</th>
+                    <th>Customer Name</th>
+                    <th>Customer Address</th>
+                    <th>Contact</th>
+                </tr>
+                </thead>
+
+                <!-- table body set up -->
+                <tbody id="customerTableBody">
+
+                </tbody>
+
+
+            </table>
+
+        </div>
+    </section>
+
+</section>
