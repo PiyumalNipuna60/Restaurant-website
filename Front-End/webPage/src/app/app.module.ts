@@ -11,6 +11,7 @@ import { IngredientPageComponent } from './ingredient-page/ingredient-page.compo
 import { BookPageComponent } from './book-page/book-page.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { DashBoardComponent } from './dash-board/dash-board.component';
+import { CustomerFormComponent } from './customer-form/customer-form.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { DashBoardComponent } from './dash-board/dash-board.component';
     IngredientPageComponent,
     BookPageComponent,
     ContactPageComponent,
-    DashBoardComponent
+    DashBoardComponent,
+    CustomerFormComponent
   ],
   imports: [
     BrowserModule,
