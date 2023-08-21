@@ -10,6 +10,7 @@ import { MenuPageComponent } from './menu-page/menu-page.component';
 import { IngredientPageComponent } from './ingredient-page/ingredient-page.component';
 import { BookPageComponent } from './book-page/book-page.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
+import { DashBoardComponent } from './dash-board/dash-board.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
     MenuPageComponent,
     IngredientPageComponent,
     BookPageComponent,
-    ContactPageComponent
+    ContactPageComponent,
+    DashBoardComponent
   ],
   imports: [
     BrowserModule,
