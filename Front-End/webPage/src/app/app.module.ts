@@ -12,6 +12,7 @@ import { BookPageComponent } from './book-page/book-page.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { DashBoardComponent } from './dash-board/dash-board.component';
 import { CustomerFormComponent } from './customer-form/customer-form.component';
+import { HomeFormComponent } from './home-form/home-form.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CustomerFormComponent } from './customer-form/customer-form.component';
     BookPageComponent,
     ContactPageComponent,
     DashBoardComponent,
-    CustomerFormComponent
+    CustomerFormComponent,
+    HomeFormComponent
   ],
   imports: [
     BrowserModule,
