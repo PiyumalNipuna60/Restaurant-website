@@ -13,6 +13,7 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
 import { DashBoardComponent } from './dash-board/dash-board.component';
 import { CustomerFormComponent } from './customer-form/customer-form.component';
 import { HomeFormComponent } from './home-form/home-form.component';
+import { ItemFormComponent } from './item-form/item-form.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { HomeFormComponent } from './home-form/home-form.component';
     ContactPageComponent,
     DashBoardComponent,
     CustomerFormComponent,
-    HomeFormComponent
+    HomeFormComponent,
+    ItemFormComponent
   ],
   imports: [
     BrowserModule,

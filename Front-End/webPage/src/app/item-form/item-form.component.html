@@ -1,0 +1,104 @@
+<!-- introducing item form -->
+<section class="container-fluid" id="itemForm">
+
+    <section class="row mt-0  justify-content-around" style="margin-right: 0; margin-left: 0">
+        <div class="col-12 col-md-5 mt-5">
+
+            <div class="pt-3 pb-5 px-3 py-3 mt-2 mainLoader">
+
+                <!-- manage customer label setup -->
+                <h1 class="h1 mb-3" style="font-family: 'Kanit', sans-serif;color: #2d6a0a; font-weight: bold ">Manage
+                    Items</h1>
+                <div class="mb-3">
+
+                    <!-- search text label -->
+                    <label class="form-label" for="srcItemID" style="color: #235915; font-weight: bold">Search
+                        Item here</label>
+
+                    <!-- text field set up -->
+                    <input class="searchFld form-control" id="srcItemID" placeholder="Item ID" type="text">
+
+                </div>
+                <!-- adding buttons for customer managements -->
+
+                <!-- add button -->
+                <button class="btn btnBackGround m-lg-2" id="addItemBtn"
+                        style="background-color: #2ed573; color: black; font-weight: bold"
+                        type="button">Add Item
+                </button>
+                <!-- update button -->
+                <button class="btn btnBackGround m-lg-2" id="updateItemBtn"
+                        style="background-color: #eccc68; color: black;font-weight: bold;"
+                        type="button">Update Item
+                </button>
+                <!-- delete button -->
+                <button class="btn btnBackGround m-lg-2" id="deleteItemBtn"
+                        style="background-color: #ff4757; color: black;font-weight: bold;"
+                        type="button">Delete Item
+                </button>
+
+            </div>
+        </div>
+
+        <!-- customer details form -->
+        <div class="col-12 col-md-5 mt-3 textFldPanes">
+
+            <!-- item ID set up -->
+            <div class="mb-3">
+                <label class="form-label " for="itemIdTxt">Item Id</label>
+                <input class="form-control " disabled id="itemIdTxt" placeholder="Item ID" type="text">
+                <p><small class="text-danger fw-bold" id="itemIdTxtLbl"></small></p>
+            </div>
+
+            <!-- item name set up -->
+            <div class="mb-3">
+                <label class="form-label" for="ItemNameTxt">Item Name</label>
+                <input class="form-control" id="ItemNameTxt" placeholder="Item Name" type="text">
+                <p><small class="text-danger fw-bold" id="itemNameTxtLbl"></small></p>
+            </div>
+
+            <!-- item Qty set up -->
+            <div class="mb-3">
+                <label class="form-label" for="itemQtyTxt">Item Qty</label>
+                <input class="form-control" id="itemQtyTxt" placeholder="Item Qty" type="text">
+                <p><small class="text-danger fw-bold" id="itemQtyTxtLbl"></small></p>
+            </div>
+
+            <!-- Unit price set up -->
+            <div class="mb-3">
+                <label class="form-label" for="unitPriceTxt">Unit Price</label>
+                <input class="form-control" id="unitPriceTxt" placeholder="Unit Price" type="text">
+                <p><small class="text-danger fw-bold" id="itemUnitPriceTxtLbl"></small></p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- table management starts -->
+    <section class="row justify-content-center w-100 mt-3">
+        <div class="col" style="padding-left: 2rem">
+            <!-- table container set up -->
+            <table class="table table-hover container-fluid classTbl">
+
+                <!-- table heading -->
+                <thead class="bg-dark text-white tableHead">
+
+                <tr>
+                    <th>Item Code</th>
+                    <th>Item Name</th>
+                    <th>Quantity</th>
+                    <th>Item Price</th>
+                </tr>
+                </thead>
+
+                <tbody id="itemTblBody">
+
+                </tbody>
+
+            </table>
+
+        </div>
+    </section>
+
+</section>
