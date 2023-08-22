@@ -14,6 +14,7 @@ import { DashBoardComponent } from './dash-board/dash-board.component';
 import { CustomerFormComponent } from './customer-form/customer-form.component';
 import { HomeFormComponent } from './home-form/home-form.component';
 import { ItemFormComponent } from './item-form/item-form.component';
+import { OrderFormComponent } from './order-form/order-form.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ItemFormComponent } from './item-form/item-form.component';
     DashBoardComponent,
     CustomerFormComponent,
     HomeFormComponent,
-    ItemFormComponent
+    ItemFormComponent,
+    OrderFormComponent
   ],
   imports: [
     BrowserModule,

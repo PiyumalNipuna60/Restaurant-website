@@ -1,0 +1,411 @@
+<!-- orders form -->
+<main>
+  <main class="container-fluid" id="orderForm">
+    <div class="container-fluid mt-4">
+      <div class="jumbotron pt-4">
+        <div class="row w-100">
+          <div class="col-lg-4" style="padding-left: 20px">
+            <div
+              class="card formBackGround"
+              style="margin-right: 30px; margin-left: 60px"
+            >
+              <!-- set up header -->
+              <div
+                class="card-header font-weight-bolder"
+                style="
+                  background-color: black;
+                  font-weight: bold;
+                  color: #ffffff;
+                "
+              >
+                Customer Details
+              </div>
+              <!-- customer details card section body set up -->
+              <div class="card-body" style="background-color: #ffffff">
+                <!-- starting form -->
+                <form action="">
+                  <!-- order id text field and label set up -->
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="form-group">
+                        <label>Order ID :</label>
+                        <label for="txtOrderID"></label
+                        ><input
+                          class="form-control"
+                          id="txtOrderID"
+                          type="text"
+                        />
+                        <span
+                          class="control-error"
+                          id="orderId-invalid-error"
+                        ></span>
+                      </div>
+                    </div>
+                    <!-- date selector and label set up -->
+                    <div class="col-6">
+                      <div class="form-group">
+                        <label>Date :</label>
+                        <label for="txtDate"></label
+                        ><input class="form-control" id="txtDate" type="date" />
+                      </div>
+                    </div>
+                  </div>
+                  <!-- customer id text field -->
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="form-group">
+                        <label>Customer ID</label>
+                        <label for="orderCustomerID"></label>
+                        <select
+                          class="form-control"
+                          id="orderCustomerID"
+                        ></select>
+                      </div>
+                    </div>
+                    <!-- customer name text field -->
+                    <div class="col-6">
+                      <div class="form-group">
+                        <label>Customer Name:</label>
+                        <label for="selectCusName"></label>
+                        <!--   <select class="form-control" id="selectCusID"></select>-->
+                        <input
+                          class="form-control"
+                          disabled
+                          id="selectCusName"
+                        />
+                        <span class="control-error" id="cus-empty-error"></span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- customer name text field -->
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label>Contact :</label>
+                        <label for="orderCustomerContact"></label
+                        ><input
+                          class="form-control"
+                          disabled
+                          id="orderCustomerContact"
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                    <!-- customer address text field -->
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label>Address :</label>
+                        <label for="orderCustomerAddress"></label
+                        ><input
+                          class="form-control"
+                          disabled
+                          id="orderCustomerAddress"
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-4 mt-lg-0 mt-3"
+            style="padding: 0; margin-right: 40px"
+          >
+            <div class="card formBackGround" style="background-color: #ffffff">
+              <!-- item selector set up -->
+              <div
+                class="card-header bg-dark text-light font-weight-bolder"
+                style="font-weight: bold"
+              >
+                Item Select
+              </div>
+              <div class="card-body">
+                <form>
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="form-group">
+                        <label>Item Code :</label>
+                        <label for="itemCodeCombo"></label>
+                        <!--     <input class="form-control" id="txtItemCode" type="text">-->
+                        <select
+                          class="form-control"
+                          id="itemCodeCombo"
+                        ></select>
+                      </div>
+                    </div>
+
+                    <div class="col-6">
+                      <div class="form-group">
+                        <label>Item :</label>
+                        <label for="selectItemCode"></label>
+
+                        <input
+                          class="form-control"
+                          disabled
+                          id="selectItemCode"
+                          type="text"
+                        />
+                        <!--      <select class="form-control" disabled id="selectItemCode"></select>-->
+                        <span
+                          class="control-error"
+                          id="item-empty-error"
+                        ></span>
+                      </div>
+                    </div>
+
+                    <div class="col-5">
+                      <div class="form-group">
+                        <label>Item Name :</label>
+                        <label for="txtItemDescription"></label
+                        ><input
+                          class="form-control"
+                          disabled
+                          id="txtItemDescription"
+                          type="text"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col-4">
+                      <div class="form-group">
+                        <label class="">Price :</label>
+                        <label for="txtItemPrice"></label
+                        ><input
+                          class="form-control"
+                          disabled
+                          id="txtItemPrice"
+                          type="text"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col-3">
+                      <div class="form-group">
+                        <label class="">QtyOnH :</label>
+                        <label for="txtQTYOnHand"></label
+                        ><input
+                          class="form-control"
+                          disabled
+                          id="txtQTYOnHand"
+                          type="text"
+                        />
+                      </div>
+                    </div>
+
+                    <hr class="mt-2" />
+                    <hr />
+
+                    <div class="col-12 mt-4">
+                      <div class="form-group">
+                        <label>Order Quantity :</label>
+                        <label for="txtQty"></label
+                        ><input
+                          class="searchFld form-control"
+                          id="txtQty"
+                          min="1"
+                          type="number"
+                        />
+                        <span
+                          class="control-error"
+                          id="order-qty-empty-error"
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group text-right">
+                    <button
+                      class="btn btn-success col-12 col-sm-auto mt-1 btnBackGround"
+                      id="btnAddToTable"
+                      type="button"
+                    >
+                      Add Item
+                    </button>
+
+                    <button
+                      class="btn btn-warning col-12 col-sm-auto mt-1 btnBackGround"
+                      data-bs-target="#myModal"
+                      data-bs-toggle="modal"
+                      type="button"
+                    >
+                      Order Details
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!-- pay option set up -->
+          <div
+            class="col-lg-3 justify-content-center formBackGround"
+            style="padding: 0; width: 20rem"
+          >
+            <section class="content-box-2 p-1">
+              <div class="row m-0">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-12">
+                      <span class="" id="total-text">Total : </span>
+                    </div>
+                    <div class="col-12">
+                      <input
+                        class="searchFld form-control"
+                        disabled
+                        id="total"
+                        type="text"
+                      />
+                      <!--       Rs/= <span id="total">00.0</span>-->
+                      <!--        ------------------------------------------------------------------------------------------>
+                      <!--        <span id="total">00.0</span> Rs/=-->
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-12 mt-3">
+                      <span id="total-text1">Discounted Price : </span>
+                    </div>
+                    <div class="col-12">
+                      <input
+                        class="searchFld form-control"
+                        disabled
+                        id="subtotal"
+                        type="text"
+                      />
+                      <!--       Rs/= <span id="subtotal">00.0</span>-->
+                      <!--       <span id="subtotal">00.0</span> Rs/=-->
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 mt-2">
+                  <div class="form-group">
+                    <label>Cash</label>
+                    <label for="txtCash"></label
+                    ><input
+                      class="searchFld form-control"
+                      id="txtCash"
+                      min="0"
+                      type="number"
+                    />
+                    <span class="control-error" id="cash-empty-error"></span>
+                  </div>
+                </div>
+
+                <div class="col-6 mt-2">
+                  <div class="form-group">
+                    <label>Discount</label>
+                    <label for="txtDiscount"></label
+                    ><input
+                      class="searchFld form-control"
+                      id="txtDiscount"
+                      min="0"
+                      type="number"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-group">
+                    <label>Balance</label>
+                    <label for="txtBalance"></label
+                    ><input
+                      class="searchFld form-control"
+                      disabled
+                      id="txtBalance"
+                      type="text"
+                    />
+                  </div>
+                </div>
+                <div class="col-8">
+                  <button
+                    class="btn btn-danger purchaceBtn mt-4 btnBackGround"
+                    id="btnSubmitOrder"
+                    type="button"
+                  >
+                    Purchase
+                  </button>
+                  <button
+                    class="btn btn-warning mt-4 btnBackGround"
+                    id="btnClear"
+                    type="button"
+                  >
+                    Clear
+                  </button>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <section class="row justify-content-center w-100 mt-3">
+            <div
+              class="col"
+              style="align-items: center; justify-items: center; display: flex"
+            >
+              <!-- table container set up -->
+              <table class="table table-hover container-fluid">
+                <!-- table heading -->
+                <thead class="bg-dark text-white tableHead">
+                  <tr>
+                    <th>Item Code</th>
+                    <th>Item Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                  </tr>
+                </thead>
+                <tbody id="orderTblBody"></tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="container mt-5">
+    <!--        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Contact Us</button>-->
+
+    <div class="modal" id="myModal">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header" style="background: #0ab20d">
+            <h5 class="modal-title" id="orderDetailLabel">Order Detail Form</h5>
+            <button
+              aria-label="Close"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              type="button"
+            ></button>
+          </div>
+          <div class="modal-body" style="margin-left: 1.5em">
+            <section class="row" style="width: 100%">
+              <table
+                class="table table-dark table-striped mt-0 container-fluid"
+              >
+                <thead class="tableHead">
+                  <tr>
+                    <th scope="col">Order Id</th>
+                    <th scope="col">Order Date</th>
+                    <th scope="col">Customer Id</th>
+                    <th scope="col">Item Code</th>
+                    <th scope="col">Order Quantity</th>
+                    <th scope="col">Discount</th>
+                    <th scope="col">Total</th>
+                  </tr>
+                </thead>
+                <tbody id="itemDetailsTblBody"></tbody>
+              </table>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
