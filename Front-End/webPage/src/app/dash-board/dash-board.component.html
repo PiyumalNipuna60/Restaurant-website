@@ -19,19 +19,19 @@
 
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <button aria-current="page" class="nav-link btn btn-dark active" id="Home">Home</button>
+                        <button routerLink="/dash" aria-current="page" class="nav-link btn btn-dark active" id="Home">Home</button>
                     </li>
 
                     <li class="nav-item">
-                        <button class="nav-link btn btn-dark" id="Customer">Customers</button>
+                        <button routerLink="/customer" class="nav-link btn btn-dark" id="Customer">Customers</button>
                     </li>
 
                     <li class="nav-item">
-                        <button class="nav-link btn btn-dark" id="Item">Items</button>
+                        <button routerLink="/item" class="nav-link btn btn-dark" id="Item">Items</button>
                     </li>
 
                     <li class="nav-item">
-                        <button class="nav-link btn btn-dark" id="Order">Orders</button>
+                        <button routerLink="/orders" class="nav-link btn btn-dark" id="Order">Orders</button>
                     </li>
                 </ul>
             </div>
@@ -39,8 +39,3 @@
     </nav>
 
 </header>
-
-<!-- <app-home-form></app-home-form> -->
-<!-- <app-customer-form></app-customer-form> -->
-<!-- <app-item-form></app-item-form> -->
-<app-order-form></app-order-form>
