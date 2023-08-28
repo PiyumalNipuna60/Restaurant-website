@@ -18,7 +18,12 @@ const routes: Routes = [
  {path: 'about', component: AboutPageComponent},
  {path: 'menu', component: MenuPageComponent},
  {path: 'event', component: IngredientPageComponent},
- {path: 'contact', component: ContactPageComponent}
+ {path: 'contact', component: DashBoardComponent},
+
+ {path: 'home', component: HomeFormComponent},
+ {path: 'customer', component: CustomerFormComponent},
+ {path: 'item', component: ItemFormComponent},
+ {path: 'orders', component: OrderFormComponent},
 ];
 
 @NgModule({
